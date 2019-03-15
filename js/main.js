@@ -5,7 +5,7 @@
 
 	let largeImage 	= document.querySelector('#photo-large');
 		smallImage 	= document.querySelector('#photo-small');
-		paragraphs	= document.querySelectorAll('.column');
+		paragraphs	= document.querySelectorAll('.bio-row');
 
 	console.log('Working');
 	console.log(smallImage);
