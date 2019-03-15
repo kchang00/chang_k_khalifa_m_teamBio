@@ -66,12 +66,7 @@ h3 {
 }
 
 #bio-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bio-row {
-	padding: 20px;
+	padding: 50px;
 }
 
 #footer {
