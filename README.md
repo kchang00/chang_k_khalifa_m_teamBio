@@ -6,7 +6,7 @@
 ## Built With
 
 * HTML and CSS - Flexbox Layout
-* JS - On click events and switching out profiles (see JS logic [here](https://github.com/kchang00/chang_k_khalifa_m_teamBio/blob/master/README.md))
+* JS - On click events and switching out profiles (see JS logic [here](https://github.com/kchang00/chang_k_khalifa_m_teamBio/blob/master/assets/js_logic.txt))
 
 ## Authors
 
