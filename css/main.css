@@ -20,12 +20,12 @@ h2 {
 
 h3 {
 	font-family: ltc-broadway, sans-serif;
-	font-size: 50px;
+	font-size: 60px;
 	display: inline;
 }
 
 p {
-	font-family: Helvetica, Arial, san-serif;
+	font-family: 'Dosis', sans-serif;
 }
 
 
@@ -43,43 +43,62 @@ p {
 	background-size: cover;*/
 }
 
-#header {
+#content {
+	/*background: url(../images/background.png) no-repeat;
+	background-size: cover;*/
 	display: flex;
-	flex-direction: column;
-	margin-top: 20px;
+	margin: auto;
 }
 
-#header h2 {
+
+#headerAndBio {
+	display: flex;
+	flex-direction: column;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+#headerAndBio h2 {
 	padding: 20px 30px;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
-#header p {
+#intro {
 	font-family: ltc-broadway, sans-serif;
 	font-size: 20px;
 	margin-top: 10px;
 	margin-right: auto;
 	margin-left: 40px;
-	width: 420px;
+	width: 440px;
 }
 
-#bio {
+#bio-text {
+	margin: 120px 40px;
+	margin-bottom: 0;
+	padding-right: 320px;
+	font-size: 18px;
+	line-height: 25px;
+}
+
+/*#bio {
 	background: url(../images/background.png) no-repeat;
 	background-size: cover;
 	display: flex;
-}
+	margin: auto;
+}*/
 
 #photo-name {
 	display: flex;
 	flex-direction: column;
-	margin-left: 40px;
+	margin-right: 120px;
+	margin-top: 140px;
 }
 
 #photo-small {
 	position: absolute;
-	top: 290px;
-	left: 50px;
+	top: 125px;
+	right: 80px;
 	cursor: pointer;
 	transition: all .5s ease;
 }
@@ -89,30 +108,20 @@ p {
 }
 
 #photo-large {
-	width: 400px;
-	margin-top: 80px;
-	margin-left: 40px;
 	border-radius: 400px;
-
 }
 
 #name {
+	margin-top: 60px;
+	line-height: 50px;
 	text-align: center;
-	padding: 30px;
-	margin-bottom: 40px;
-}
-
-#bio-text {
-	margin: auto;
-	padding: 10px 100px 0 100px;
-	font-size: 18px;
-	line-height: 20px;
 }
 
 #footer {
+	margin-top: 80px;
 	text-align: right;
 	font-size: 10px;
 	padding: 20px 10px 10px 10px;
 	/*background-color: #283031;*/
-	background-color: #000;
+	background-color: #373737;
 }
