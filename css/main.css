@@ -7,6 +7,7 @@ body, html {
 }
 
 body {
+	background-color: #264549;
 	color: #fff;
 }
 
@@ -25,7 +26,6 @@ h3 {
 
 p {
 	font-family: Helvetica, Arial, san-serif;
-	font-size: 12px;
 }
 
 
@@ -39,8 +39,8 @@ p {
 }
 
 .background {
-	background: url(../images/background.jpg) no-repeat center;
-	background-size: cover;
+	/*background: url(../images/bg.jpg) no-repeat center;
+	background-size: cover;*/
 }
 
 #header {
@@ -50,21 +50,23 @@ p {
 }
 
 #header h2 {
-	padding: 30px;
+	padding: 20px 30px;
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
 #header p {
 	font-family: ltc-broadway, sans-serif;
-	font-size: 24px;
-	margin-top: 0;
+	font-size: 20px;
+	margin-top: 10px;
 	margin-right: auto;
 	margin-left: 40px;
 	width: 420px;
 }
 
 #bio {
+	background: url(../images/background.png) no-repeat;
+	background-size: cover;
 	display: flex;
 }
 
@@ -75,31 +77,42 @@ p {
 }
 
 #photo-small {
-	background-color: #ccc;
-	width: 50px;
-	height: 50px;
 	position: absolute;
-	top: 320px;
+	top: 290px;
 	left: 50px;
+	cursor: pointer;
+	transition: all .5s ease;
+}
+
+#photo-small:hover {
+	opacity: .5;
 }
 
 #photo-large {
-	width: 300px;
-	margin-top: 150px;
+	width: 400px;
+	margin-top: 80px;
+	margin-left: 40px;
 	border-radius: 400px;
+
 }
 
 #name {
 	text-align: center;
-	padding: 10px;
+	padding: 30px;
+	margin-bottom: 40px;
 }
 
 #bio-text {
-	padding: 50px;
+	margin: auto;
+	padding: 10px 100px 0 100px;
+	font-size: 18px;
+	line-height: 20px;
 }
 
 #footer {
-	text-align: center;
+	text-align: right;
 	font-size: 10px;
-	margin-top: 40px;
+	padding: 20px 10px 10px 10px;
+	/*background-color: #283031;*/
+	background-color: #000;
 }
