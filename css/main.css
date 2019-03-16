@@ -9,6 +9,7 @@ body, html {
 body {
 	background-color: #264549;
 	color: #fff;
+
 }
 
 h2 {
@@ -39,9 +40,10 @@ p {
 }
 
 .background {
-	/*background: url(../images/bg.jpg) no-repeat center;
-	background-size: cover;*/
+	background: url(../images/bg.jpg) no-repeat center;
+	background-size: cover;
 }
+
 
 #content {
 	/*background: url(../images/background.png) no-repeat;
@@ -76,7 +78,7 @@ p {
 #bio-text {
 	margin: 120px 40px;
 	margin-bottom: 0;
-	padding-right: 320px;
+	padding-right: 260px;
 	font-size: 18px;
 	line-height: 25px;
 }
@@ -91,14 +93,14 @@ p {
 #photo-name {
 	display: flex;
 	flex-direction: column;
-	margin-right: 120px;
+	margin-right: 200px;
 	margin-top: 140px;
 }
 
 #photo-small {
 	position: absolute;
 	top: 125px;
-	right: 80px;
+	right: 160px;
 	cursor: pointer;
 	transition: all .5s ease;
 }
@@ -119,9 +121,9 @@ p {
 
 #footer {
 	margin-top: 80px;
-	text-align: right;
+	text-align: center;
 	font-size: 10px;
 	padding: 20px 10px 10px 10px;
 	/*background-color: #283031;*/
-	background-color: #373737;
+	background-color: #151517;
 }
