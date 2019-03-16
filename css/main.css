@@ -8,15 +8,21 @@ body {
 }
 
 h2 {
-	font-family: 'Poller One', cursive;
-	font-size: 60px;
-	display: inline;
+	font-family: ltc-broadway, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 100px;
 }
 
 h3 {
-	font-family: 'Poller One', cursive;
-	font-size: 30px;
+	font-family: ltc-broadway, sans-serif;
+	font-size: 50px;
 	display: inline;
+}
+
+p {
+	font-family: Helvetica, Arial, san-serif;
+	font-size: 12px;
 }
 
 
@@ -32,7 +38,19 @@ h3 {
 #header {
 	display: flex;
 	flex-direction: column;
-	margin-top: 40px;
+	margin-top: 10px;
+}
+
+#header h2 {
+	padding: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+#header p {
+	font-family: ltc-broadway, sans-serif;
+	font-size: 30px;
+	padding: 20px;
 }
 
 #bio {
