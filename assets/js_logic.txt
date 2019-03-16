@@ -1,8 +1,8 @@
 JS Logic:
 
-1. Show only one team member's information (picture, heading, and <p> tag populated with an array)
-2. On click of other team member's small picture:
-	a. Swap the source of first large picture and replace it with second large picture
-	b. Swap the source of the first small picture and replace it with the second small picture
-	c. Replace the written content with new content (change arrays)
+1. Show only one team member's information (picture, heading, and populate the <p> tag with content from the array)
+2. On click of other team member's small picture, check which team member's info is displayed and:
+	a. swap the source of the current large picture and replace it with the other large picture
+	b. swap the source of the current small picture and replace it with the other small picture
+	c. replace the written content with new content (change to other item in array)
 		i. includes heading tags and p tags
