@@ -16,15 +16,15 @@
 
 	smallImage.addEventListener('click', function(e) {
 		if (paragraph.innerHTML == arrayText[0]) {
-			largeImage.src = 'images/mariam.jpg';
-			smallImage.src = 'images/kayla-large.jpg';
+			largeImage.src = 'images/mariam-large.jpg';
+			smallImage.src = 'images/kayla-small.png';
 			paragraph.innerHTML = arrayText[1];
 			h3.innerHTML = "Mariam Khalifa";
 		}
 
 		else {
 			largeImage.src = 'images/kayla-large.jpg';
-			smallImage.src = 'images/mariam.jpg';
+			smallImage.src = 'images/mariam-small.png';
 			paragraph.innerHTML = arrayText[0];
 			h3.innerHTML = "Kayla Chang";
 		}
