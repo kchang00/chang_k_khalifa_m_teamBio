@@ -20,6 +20,7 @@
 			smallImage.src = 'images/kayla-small.png';
 			paragraph.innerHTML = arrayText[1];
 			h3.innerHTML = "Mariam Khalifa";
+			largeImage.classList.toggle('switchAnim');
 		}
 
 		else {
@@ -29,6 +30,7 @@
 			h3.innerHTML = "Kayla Chang";
 		}
 	});
+
 
 	window.addEventListener('load', bioLoad);
 
