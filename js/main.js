@@ -7,14 +7,14 @@
 		smallImage 	= document.querySelector('#photo-small');
 		paragraph	= document.querySelector('#bio-text');
 		h3 			= document.getElementsByTagName('h3')[0];
-
+		change 		= document.querySelector('.title');
 	// console.log('Working');
 
 	function bioLoad() {
 		paragraph.innerHTML = arrayText[0];
 	}
 
-	smallImage.addEventListener('click', function(e) {
+	change.addEventListener('click', function(e) {
 		if (paragraph.innerHTML == arrayText[0]) {
 			largeImage.src = 'images/mariam-large.jpg';
 			smallImage.src = 'images/kayla-small.png';
