@@ -7,30 +7,47 @@
 		smallImage 	= document.querySelector('#photo-small');
 		paragraph	= document.querySelector('#bio-text');
 		h3 			= document.getElementsByTagName('h3')[0];
-		change 		= document.querySelector('.title');
+		overlay 	= document.querySelector('.title');
+
 	// console.log('Working');
 
 	function bioLoad() {
 		paragraph.innerHTML = arrayText[0];
+		largeImage.classList.add('switchAnim');
+		smallImage.classList.add('switchAnimSmall');
+		h3.classList.add('switchAnim');
+		paragraph.classList.add('switchAnim');
 	}
 
-	change.addEventListener('click', function(e) {
+	overlay.addEventListener('click', function(e) {
+		largeImage.classList.remove('switchAnim'); 	// animation start
+		smallImage.classList.remove('switchAnimSmall');
+		h3.classList.remove('switchAnim');
+		paragraph.classList.remove('switchAnim');
+
+		// triggering reflow
+		void largeImage.offsetWidth;
+
+		largeImage.classList.add('switchAnim');
+		smallImage.classList.add('switchAnimSmall');
+		h3.classList.add('switchAnim');
+		paragraph.classList.add('switchAnim'); // animation end
+
+		// switchAnim.style.webkitAnimationPlayState = "running";
 		if (paragraph.innerHTML == arrayText[0]) {
 			largeImage.src = 'images/mariam-large.jpg';
 			smallImage.src = 'images/kayla-small.png';
 			paragraph.innerHTML = arrayText[1];
 			h3.innerHTML = "Mariam Khalifa";
-			largeImage.classList.toggle('switchAnim');
 		}
-
 		else {
 			largeImage.src = 'images/kayla-large.jpg';
 			smallImage.src = 'images/mariam-small.png';
 			paragraph.innerHTML = arrayText[0];
 			h3.innerHTML = "Kayla Chang";
 		}
+		// switchAnim.style.webkitAnimationPlayState = "paused";
 	});
-
 
 	window.addEventListener('load', bioLoad);
 

@@ -91,8 +91,6 @@ h3 {
 	border-radius: 140px;
 	box-shadow: 2px 0 5px #666
 	transition: all .5s ease;
-	animation: fadeAnim 2s backwards;
-	animation-delay: .5s;
 }
 
 .title {
@@ -126,12 +124,6 @@ h3 {
 #photo-large {
 	border-radius: 400px;
 	box-shadow: 3px 0 10px #333;
-	animation: fadeAnim 2s;
-}
-
-@-webkit-keyframes fadeAnim {
-	0% {opacity: 0;}
-	100& {opacity: 1;}
 }
 
 #name {
@@ -139,7 +131,6 @@ h3 {
 	line-height: 50px;
 	text-align: center;
 	text-shadow: 3px 3px 5px #666;
-	animation: fadeAnim 2s;
 }
 
 .switchAnim {
@@ -147,8 +138,18 @@ h3 {
 }
 
 @-webkit-keyframes switchAnim {
-	0% {opacity: 0;}
-	100& {opacity: 1;}
+	0% {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+.switchAnimSmall {
+	animation: switchAnim 1s .01s;
 }
 
 #footer {
